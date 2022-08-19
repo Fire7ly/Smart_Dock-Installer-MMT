@@ -29,13 +29,21 @@ is_legacy_script() {
 }
 
 print_modname() {
-  local len
-  len=`echo -n $MODNAME | wc -c`
-  len=$((len + 2))
-  local pounds=`printf "%${len}s" | tr ' ' '*'`
-  ui_print "$pounds"
-  ui_print " $MODNAME "
-  ui_print "$pounds"
+
+  ui_print "************************************************************"
+  ui_print "			Smart Dock Installer			"
+  ui_print "               Developed by - Axel & KS Maan                "
+  ui_print "        Source: https://github.com/axel358/smartdock        "
+  ui_print "      ------------------Debug info--------------------      "
+  ui_print "      Android API    : $API			                "
+  ui_print "      Magisk version : $MAGISK_VER			        "
+  ui_print "      Arch           : $ARCH				"
+  ui_print "      Is magisk mode : $BOOTMODE			        "
+  ui_print "      Module version : V4				        "
+  ui_print "      ------------------------------------------------      "
+  ui_print "************************************************************"
+  ui_print ""
+  
   ui_print "*******************"
   ui_print " Powered by Magisk "
   ui_print "*******************"

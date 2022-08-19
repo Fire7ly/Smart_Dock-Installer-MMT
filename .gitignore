@@ -1,4 +1,5 @@
 __MACOSX
 .DS_Store
-*.sh
 *.bat
+*.log
+*.zip
